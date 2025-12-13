@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router"
 import { cn } from "@/lib/utils"
+import { Avatar, AvatarImage } from "@/components/ui/avatar"
 
 const navItems = [
   { to: "/", label: "Inicio", end: true },
@@ -17,6 +18,7 @@ const navLinkClasses = (isActive: boolean) =>
   )
 
 export const AppLayout: React.FC = () => {
+
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <header className="sticky top-0 z-10 border-b border-neutral-200 bg-white/80 backdrop-blur">
@@ -24,9 +26,12 @@ export const AppLayout: React.FC = () => {
           <NavLink
             to="/"
             end
-            className="text-sm font-semibold uppercase tracking-[0.2em] text-[#800020]"
+            className="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#800020]"
           >
-            NM · Portfolio
+            <Avatar className="size-15">
+              <AvatarImage src="src/imagenes/Logotipo Minimalista en Rosa Pastel.png" alt="" className="w-full h-full object-cover object-center" />
+            </Avatar>
+            <span>NM · Portfolio</span>
           </NavLink>
 
           <nav className="flex flex-wrap items-center gap-2">

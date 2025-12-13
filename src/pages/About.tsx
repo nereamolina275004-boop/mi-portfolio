@@ -20,8 +20,8 @@ export const About: React.FC = () => {
         <div className="w-full max-w-sm flex-shrink-0">
           <img
             className="w-full h-full object-cover rounded-xl border border-neutral-200"
-            src={publicAsset("/imagenes/IMG_3890.jpg")}
-            alt="Retrato de Nerea Molina"
+            src={publicAsset("src/imagenes/IMG_3890.jpg")}
+            alt=""
           />
         </div>
       </header>

@@ -1,4 +1,4 @@
-// src/components/ProjectCard.tsx
+
 
 import type { Project } from "@/data/projects"
 import { Badge } from "@/components/ui/badge"
@@ -12,15 +12,18 @@ interface ProjectCardProps {
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const coverSrc = publicAsset(project.coverImage)
+  const isContain = project.coverFit === "contain"
 
   return (
     <Link to={`/projects/${project.slug}`} className="group">
-      <Card className="h-full border-neutral-200 hover:border-neutral-900 transition-colors flex flex-col overflow-hidden">
-        <div className="aspect-video overflow-hidden bg-neutral-100">
+      <Card className="h-full border-neutral-200 hover:border-[#800020] transition-colors flex flex-col overflow-hidden">
+        <div
+          className="aspect-video overflow-hidden bg-neutral-100 flex items-center justify-center"
+        >
           <img
             src={coverSrc}
             alt={project.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            className={`w-full h-full ${isContain ? "object-contain p-4" : "object-cover"} group-hover:scale-105 transition-transform duration-300`}
           />
         </div>
         <CardHeader>

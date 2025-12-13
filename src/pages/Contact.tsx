@@ -1,9 +1,9 @@
-// src/pages/Contact.tsx
+
 import { type FormEvent, useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
-import { Mail } from "lucide-react"
+import { Instagram, Mail } from "lucide-react"
 
 interface ContactFormData {
   name: string
@@ -18,8 +18,6 @@ export const Contact: React.FC = () => {
     message: "",
   })
 
-  const [status, setStatus] = useState<"idle" | "sent">("idle")
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
@@ -28,22 +26,26 @@ export const Contact: React.FC = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log("Formulario enviado:", form)
-    setStatus("sent")
+    const subject = encodeURIComponent(`Nuevo mensaje de ${form.name}`)
+    const body = encodeURIComponent(
+      `Nombre: ${form.name}\nEmail: ${form.email}\n\nMensaje:\n${form.message}`,
+    )
+
+    window.location.href = `mailto:bynerssart@gmail.com?subject=${subject}&body=${body}`
   }
 
   return (
-    <section className="space-y-6">
+    <section className="space-y-6 flex flex-col items-center justify-center">
       <header className="space-y-2">
-        <h1 className="text-2xl font-semibold">Contacto</h1>
-        <p className="text-sm text-neutral-600 max-w-xl">
+        <h1 className="text-2xl font-semibold text-center">Contacto</h1>
+        <p className="text-sm text-neutral-600 max-w-xl text-center">
           ¿Tienes un proyecto, una colaboración o simplemente quieres saludar?
           Rellena el formulario o escríbeme directamente a{" "}
           <a
-            href="nereamolina275004@gmail.com"
+            href="mailto:bynerssart@gmail.com"
             className="text-[#800020] underline underline-offset-2"
           >
-            nereamolina275004@gmail.com
+            bynerssart@gmail.com
           </a>
           .
         </p>
@@ -51,7 +53,7 @@ export const Contact: React.FC = () => {
 
       <form
         onSubmit={handleSubmit}
-        className="max-w-md space-y-4 border border-neutral-200 rounded-2xl p-4"
+        className="max-w-md space-y-4 border border-[#800020] rounded-2xl p-4 bg-[#c80453]/15"
       >
         <div className="space-y-1">
           <label htmlFor="name" className="text-xs text-neutral-600">
@@ -63,6 +65,7 @@ export const Contact: React.FC = () => {
             value={form.name}
             onChange={handleChange}
             required
+            className="border-[#800020] bg-white"
           />
         </div>
 
@@ -77,6 +80,7 @@ export const Contact: React.FC = () => {
             value={form.email}
             onChange={handleChange}
             required
+            className="border-[#800020] bg-white"
           />
         </div>
 
@@ -91,6 +95,7 @@ export const Contact: React.FC = () => {
             value={form.message}
             onChange={handleChange}
             required
+            className="border-[#800020] bg-white"
           />
         </div>
 
@@ -98,14 +103,17 @@ export const Contact: React.FC = () => {
           <Mail className="w-4 h-4" />
           Enviar mensaje
         </Button>
+      </form> 
 
-        {status === "sent" && (
-          <p className="text-xs text-emerald-600 mt-2">
-            ¡Gracias! He recibido tu mensaje (simulado).
-          </p>
-        )}
-      </form>
+      <a
+      href="https://www.instagram.com/bynerssart"
+      target="_blank"
+      className="text-[#800020] hover:text-[#c80453]/15"
+      >
+        <Instagram size={30}/>
+ 
+      </a>
     </section>
+   
   )
 }
-

@@ -21,7 +21,7 @@ export const studies: Study[] = [
   },
   {
     id: "2",
-    title: "Bachillerato",
+    title: "Bachillerato de Artes",
     center: "IES Poeta Paco Mollá",
     years: "2020 - 2022",
   },
@@ -34,7 +34,8 @@ export const skills: Skill[] = [
   { id: "4", name: "Adobe Premiere", level: "intermedio", category: "video" },
   { id: "5", name: "After Effects", level: "básico", category: "video" },
   { id: "6", name: "Adobe Photoshop", level: "avanzado", category: "diseño" },
-  { id: "7", name: "Adobe Ilustrator", level: "avanzado", category: "ilustración" },
-  { id: "8", name: "Procreate", level: "avanzado", category: "ilustración" },
-  { id: "9", name: "Microsoft Word", level: "intermedio", category: "otro" },
+  { id: "7", name: "Adobe InDesing", level: "avanzado", category: "diseño" },
+  { id: "8", name: "Adobe Ilustrator", level: "avanzado", category: "ilustración" },
+  { id: "9", name: "Procreate", level: "avanzado", category: "ilustración" },
+  { id: "10", name: "Microsoft Word", level: "intermedio", category: "otro" },
 ]

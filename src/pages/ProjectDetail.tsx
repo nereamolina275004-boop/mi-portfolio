@@ -1,4 +1,4 @@
-// src/pages/ProjectDetail.tsx
+
 import { useParams, Link } from "react-router"
 import { projects } from "@/data/projects"
 import { Badge } from "@/components/ui/badge"
@@ -9,6 +9,7 @@ export const ProjectDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
 
   const project = projects.find((p) => p.slug === slug)
+  const isTypographyProject = project?.slug === "tipografías"
 
   if (!project) {
     return (
@@ -51,11 +52,11 @@ export const ProjectDetail: React.FC = () => {
         </div>
       </header>
 
-      <div className="aspect-video rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+      <div className="aspect-video rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100 flex items-center justify-center">
         <img
           src={publicAsset(project.coverImage)}
           alt={project.title}
-          className="w-full h-full object-cover"
+          className={`w-full h-full ${project.coverFit === "contain" ? "object-contain p-6" : "object-cover"}`}
         />
       </div>
 
@@ -98,7 +99,9 @@ export const ProjectDetail: React.FC = () => {
             {project.galleryImages.map((src, index) => (
               <div
                 key={index}
-                className="rounded-xl overflow-hidden border border-neutral-200 bg-neutral-100"
+                className={`rounded-xl overflow-hidden border border-neutral-200 bg-neutral-100 ${
+                  isTypographyProject && index === 0 ? "sm:col-span-2" : ""
+                }`}
               >
                 <img
                   src={publicAsset(src)}

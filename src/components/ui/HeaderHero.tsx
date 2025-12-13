@@ -1,4 +1,4 @@
-// src/components/HeaderHero.tsx
+
 import { ArrowDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Link } from "react-router"
@@ -25,7 +25,7 @@ export const HeaderHero: React.FC = () => {
           Diseñadora gráfica/ Ilustradora.
         </h1>
         <p className="text-sm md:text-base text-neutral-600">
-          Este es un portfolio con algunos de mis proyectos de diseño, ilustración y vídeo realizados durante el grado y otros trabajos
+          Este es un portfolio con algunos de mis proyectos de diseño e ilustración realizados durante el grado y otros trabajos
           personales.
         </p>
         <div className="flex flex-wrap gap-3">
@@ -43,7 +43,7 @@ export const HeaderHero: React.FC = () => {
 
       <div className="relative h-48 md:h-64 rounded-3xl overflow-hidden">
         <div>
-          <img src={publicAsset("/imagenes/7B7F5C0F-B185-4AF7-A4CF-CE952B9E48F8_1_105_c.jpeg")} alt=" No photo " />
+          <img src={publicAsset("src/imagenes/7B7F5C0F-B185-4AF7-A4CF-CE952B9E48F8_1_105_c.jpeg")} alt=" No photo " />
         </div>
       </div>
     </section>
