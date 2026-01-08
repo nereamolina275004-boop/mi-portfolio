@@ -8,7 +8,8 @@ import { Contact } from "./pages"
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/mi-portfolio/">
+
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Home />} />
