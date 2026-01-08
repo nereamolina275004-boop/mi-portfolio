@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router"
-import { cn } from "@/lib/utils"
+import { cn, publicAsset } from "@/lib/utils"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
 
 const navItems = [
@@ -29,7 +29,11 @@ export const AppLayout: React.FC = () => {
             className="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#800020]"
           >
             <Avatar className="size-15">
-              <AvatarImage src="src/imagenes/Logotipo Minimalista en Rosa Pastel.png" alt="" className="w-full h-full object-cover object-center" />
+              <AvatarImage
+                src={publicAsset("imagenes/Logotipo Minimalista en Rosa Pastel.png")}
+                alt=""
+                className="w-full h-full object-cover object-center"
+              />
             </Avatar>
             <span>NM · Portfolio</span>
           </NavLink>

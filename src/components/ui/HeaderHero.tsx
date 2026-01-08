@@ -43,7 +43,7 @@ export const HeaderHero: React.FC = () => {
 
       <div className="relative h-48 md:h-64 rounded-3xl overflow-hidden">
         <div>
-          <img src={publicAsset("src/imagenes/7B7F5C0F-B185-4AF7-A4CF-CE952B9E48F8_1_105_c.jpeg")} alt=" No photo " />
+          <img src={publicAsset("imagenes/7B7F5C0F-B185-4AF7-A4CF-CE952B9E48F8_1_105_c.jpeg")} alt=" No photo " />
         </div>
       </div>
     </section>
