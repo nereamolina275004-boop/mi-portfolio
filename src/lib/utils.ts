@@ -23,8 +23,8 @@ export function publicAsset(path: string) {
   const base = import.meta.env.BASE_URL || "/"
   const normalizedBase = base.endsWith("/") ? base : `${base}/`
   const trimmedPath = path.startsWith("/") ? path.slice(1) : path
-  if (trimmedPath.startsWith("imagenes/")) {
-    const filename = trimmedPath.slice("imagenes/".length)
+  if (trimmedPath.startsWith("img/")) {
+    const filename = trimmedPath.slice("img/".length)
     const localUrl = localImageMap.get(normalizeKey(filename))
     if (localUrl) {
       return localUrl

@@ -30,7 +30,7 @@ export const AppLayout: React.FC = () => {
           >
             <Avatar className="size-15">
               <AvatarImage
-                src={publicAsset("imagenes/Logotipo Minimalista en Rosa Pastel.png")}
+                src={publicAsset("/img/Logotipo Minimalista en Rosa Pastel.png")}
                 alt=""
                 className="w-full h-full object-cover object-center"
               />

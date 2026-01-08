@@ -20,7 +20,7 @@ export const About: React.FC = () => {
         <div className="w-full max-w-sm flex-shrink-0">
           <img
             className="w-full h-full object-cover rounded-xl border border-neutral-200"
-            src={publicAsset("imagenes/IMG_3890.jpg")}
+            src={publicAsset("/img/IMG_3890.jpg")}
             alt=""
           />
         </div>

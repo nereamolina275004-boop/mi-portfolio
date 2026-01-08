@@ -34,15 +34,15 @@ export const projects: Project[] = [
     year: 2026,
     technologies: ["Procreate", "Photoshop"],
     tags: ["ilustración", "diseño editorial"],
-    coverImage: "imagenes/617077F2-995B-4F90-A6E3-9FF4FB494B8A_1_102_o.jpeg",
+    coverImage: "/img/617077F2-995B-4F90-A6E3-9FF4FB494B8A_1_102_o.jpeg",
     galleryImages: [
-      "imagenes/Ilustración_sin_título (1).jpg",
-      "imagenes/Ilustración_sin_título_2.jpg",
-      "imagenes/Ilustración_sin_título 1 (1).jpg",
-      "imagenes/0BF2116A-C7E8-4E34-BC29-07B256F3FB7E_1_105_c.jpeg",
-      "imagenes/5F293D66-A87B-42A0-BC00-66BF9D699F2F_1_105_c.jpeg",
-      "imagenes/97282C07-366B-4A1D-9E24-7D4A87E8F515_1_102_o.jpeg",
-      "imagenes/DB69CEB7-494A-4EB3-8C0A-2A392548742F_1_102_o.jpeg",
+      "/img/Ilustración_sin_título (1).jpg",
+      "/img/Ilustración_sin_título_2.jpg",
+      "/img/Ilustración_sin_título 1 (1).jpg",
+      "/img/0BF2116A-C7E8-4E34-BC29-07B256F3FB7E_1_105_c.jpeg",
+      "/img/5F293D66-A87B-42A0-BC00-66BF9D699F2F_1_105_c.jpeg",
+      "/img/97282C07-366B-4A1D-9E24-7D4A87E8F515_1_102_o.jpeg",
+      "/img/DB69CEB7-494A-4EB3-8C0A-2A392548742F_1_102_o.jpeg",
     ],
     
   },
@@ -58,12 +58,12 @@ export const projects: Project[] = [
     year: 2025,
     technologies: ["Illustrator", "Procreate", "Photoshop"],
     tags: ["diseño gráfico"],
-    coverImage: "imagenes/cartel definitivo color bien-02 (1) (1).jpg",
+    coverImage: "/img/cartel definitivo color bien-02 (1) (1).jpg",
     galleryImages: [
-      "imagenes/El Texto Del Párrafo - 1 (3).png",
-      "imagenes/Captura de pantalla 2024-12-01 a las 19.02.47 (2).png",
-      "imagenes/El Texto Del Párrafo - 1 (1).jpg",
-      "imagenes/Captura de pantalla 2024-12-02 a las 11.49.35 (1).png",
+      "/img/El Texto Del Párrafo - 1 (3).png",
+      "/img/Captura de pantalla 2024-12-01 a las 19.02.47 (2).png",
+      "/img/El Texto Del Párrafo - 1 (1).jpg",
+      "/img/Captura de pantalla 2024-12-02 a las 11.49.35 (1).png",
     ],
   },
   {
@@ -78,11 +78,11 @@ export const projects: Project[] = [
     year: 2024,
     technologies: ["Procreate"],
     tags: ["ilustración"],
-    coverImage: "imagenes/Ilustración Sin Título.jpg",
+    coverImage: "/img/Ilustración Sin Título.jpg",
     galleryImages: [
-      "imagenes/IMG2770.jpg",
-      "imagenes/Ilustración Sin Título (1).jpg",
-      "imagenes/Ilustración Sin Título.jpg",
+      "/img/IMG2770.jpg",
+      "/img/Ilustración Sin Título (1).jpg",
+      "/img/Ilustración Sin Título.jpg",
     ],
   },
   {
@@ -97,11 +97,11 @@ export const projects: Project[] = [
     year: 2024,
     technologies: ["Illustrator", "InDesing"],
     tags: ["diseño gráfico"],
-    coverImage: "imagenes/cartel 4. pignoise copia.jpg",
+    coverImage: "/img/cartel 4. pignoise copia.jpg",
     galleryImages: [
-      "imagenes/cartel 3.jpg",
-      "imagenes/cartel gama colores - Copia.jpg",
-      "imagenes/cartel 4. pignoise copia.jpg"
+      "/img/cartel 3.jpg",
+      "/img/cartel gama colores - Copia.jpg",
+      "/img/cartel 4. pignoise copia.jpg"
     ],
   },
 
@@ -117,12 +117,12 @@ export const projects: Project[] = [
     year: 2024,
     technologies: ["Illustrator", "InDesing", "Procreate"],
     tags: ["diseño gráfico"],
-    coverImage: "imagenes/fallas tipografía negro.png",
+    coverImage: "/img/fallas tipografía negro.png",
     coverFit: "contain",
     galleryImages: [
-      "imagenes/fallas tipografía.png",
-      "imagenes/Tipografía diseño negro vertical.png",
-      "imagenes/Tipografía diseño sin color vertical.png"
+      "/img/fallas tipografía.png",
+      "/img/Tipografía diseño negro vertical.png",
+      "/img/Tipografía diseño sin color vertical.png"
     ],
   },
 
